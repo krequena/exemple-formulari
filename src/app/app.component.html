@@ -1,0 +1,439 @@
+<nav class="navbar fixed-top navbar-light bg-faded">
+	<div class="container">
+		<div class="row">
+			<div class="col-fixed">
+				<h2>Exemple de formulari</h2>
+			</div>
+			<div class="col-10">
+				<div class="clearfix">
+					<div class="btn-group float-right" role="group" aria-label="Basic example">
+						<button type="button" class="btn btn-primary"><i class="icon ion-android-cloud-done"></i> Save</button>
+						<button type="button" class="btn btn-outline-info"><i class="icon ion-printer"></i> Print</button>
+						<button type="button" class="btn btn-secondary"><i class="icon ion-reply"></i> Cancel</button>
+						<button type="button" class="btn btn-outline-info" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="extendedInfo">
+							<i class="icon ion-information"></i> Extended info
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12">
+
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="#">Home</a></li>
+				<li class="breadcrumb-item"><a href="#">Order #2017-A7925</a></li>
+				<li class="breadcrumb-item active">Article 1/1V-1123</li>
+			</ol>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-fixed">
+			<ul class="nav flex-column">
+				<li class="nav-item">
+					<a class="nav-link active" href="#"><a href="#"><i class="icon ion-home"></i> Home</a></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#"><a href="#"><i class="icon ion-arrow-graph-up-right"></i> Overview</a></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><a href="#"><i class="icon ion-clipboard"></i> Orders</a></a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-10">
+			<h5 class="sub-header text-info">Article 1/1V-1123</h5>
+			<div id="extendedInfo" [ngbCollapse]="isCollapsed">
+				<div class="card">
+					<div class="card-block">
+						<table class="table">
+							<thead>
+								<th>Revision</th>
+								<th>Creation date</th>
+								<th>Quantity</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<input type="text" class="form-control form-control-sm" id="rev" aria-describedby="revHelp" placeholder="Enter revision" value="0">
+									</td>
+									<td>
+										<input type="date" class="form-control form-control-sm" id="rev" aria-describedby="revDate" placeholder="Enter date" value="2017-04-03">
+									</td>
+									<td>
+										<input type="text" class="form-control form-control-sm" id="rev" aria-describedby="quantity" placeholder="Enter quantity" value="1">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="table">
+							<thead>
+								<th>Brand</th>
+								<th>Type</th>
+								<th>State</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<select class="form-control form-control-sm">
+											<option>Brand 1</option>
+											<option>Brand 2</option>
+											<option>Brand 3</option>
+											<option>Brand 4</option>
+										</select>
+									</td>
+									<td>
+										<label class="form-check-label">
+											<input class="form-check-input form-control form-control-sm" type="radio" name="type" id="type0" value="s1" checked>
+											Type 1
+										</label>
+										<label class="form-check-label">
+											<input class="form-check-input form-control form-control-sm" type="radio" name="type" id="type0" value="s2">
+											Type 2
+										</label>
+										<label class="form-check-label">
+											<input class="form-check-input form-control form-control-sm" type="radio" name="type" id="type0" value="s3">
+											Type 3
+										</label>
+									</td>
+									<td>
+										<select class="form-control form-control-sm">
+											<option>State 1</option>
+											<option>State 2</option>
+											<option>State 3</option>
+										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<table class="table table-hover table-striped table-sm">
+				<thead>
+					<tr>
+						<th class="text-md-left" width="250px">
+
+						</th>
+						<th class="text-md-center" colspan="4" scope="col">
+							Service conditions
+						</th>
+					</tr>
+					<tr>
+						<th class="text-md-left">
+							Parameter
+						</th>
+						<th class="text-md-right">
+							Maximum
+						</th>
+						<th class="text-md-right">
+							Normal
+						</th>
+						<th class="text-md-right">
+							Minimum
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							Flow
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">m&#179;/h</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">m&#179;/h</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">m&#179;/h</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Pressure
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">bar</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">bar</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">bar</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Pressure outlet
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">bar</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">bar</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">bar</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Weight
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">kg</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">kg</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">kg</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							A calc.
+						</td>
+						<td>
+							<div class="text-right text-info">
+								0.00
+							</div>
+						</td>
+						<td>
+							<div class="text-right text-info">
+								0.00
+							</div>
+						</td>
+						<td>
+							<div class="text-right text-info">
+								0.00
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							B
+						</td>
+						<td>
+							<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+						</td>
+						<td>
+							<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+						</td>
+						<td>
+							<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Nominal
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">mm</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">mm</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">mm</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Diameter
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">mm</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">mm</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">mm</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Thickness
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">mm</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">mm</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">mm</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Noise
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">dB</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">dB</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon2">dB</span>
+								<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="table table-hover table-striped table-sm">
+				<thead>
+					<tr>
+						<th class="text-md-left" width="250px">
+
+						</th>
+						<th class="text-md-center" colspan="4" scope="col">
+							Calculated values
+						</th>
+					</tr>
+					<tr>
+						<th class="text-md-left">
+							Parameter
+						</th>
+						<th class="text-md-right">
+							Maximum
+						</th>
+						<th class="text-md-right">
+							Normal
+						</th>
+						<th class="text-md-right">
+							Minimum
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							A
+						</td>
+						<td>
+							<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+						</td>
+						<td>
+							<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+						</td>
+						<td>
+							<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							B
+						</td>
+						<td>
+							<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+						</td>
+						<td>
+							<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+						</td>
+						<td>
+							<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							C
+						</td>
+						<td>
+							<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+						</td>
+						<td>
+							<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+						</td>
+						<td>
+							<input type="text" class="form-control form-control-sm text-right" id="rev" aria-describedby="" placeholder="" value="0.00">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
